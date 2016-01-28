@@ -8,7 +8,6 @@
 //ファイル名を受け取る関数
 void STUDENT::getFileName()
 {
-
 	printf("File Name:");
 	scanf("%s", fname);
 }
@@ -60,7 +59,7 @@ void STUDENT::load_data()
 	stu = get_numstudents();
 
 	//get_numstudentsで得られた値分の領域確保
-	p = (struct STUDENT_DATA *)malloc(sizeof(struct STUDENT_DATA)*stu);
+	p = new struct STUDENT_DATA[stu];
 
 
 	for(i = 0; i < stu; i++)
@@ -121,7 +120,7 @@ int STUDENT::get_maxnamelength()
 
 	for (i = 0; i < num; i++)
 	{
-		if (mlen < strlen(p[i].family))
+		if ((unsigned int)mlen < strlen(p[i].family))
 		mlen = strlen(p[i].family);
 	}
 
@@ -140,7 +139,7 @@ void STUDENT::printMaxNameLength()
 	
 	for (i = 0; i < num; i++)
 	{
-		if (maxnlen == strlen(p[i].family))
+		if ((unsigned int)maxnlen == strlen(p[i].family))
 		{
 			printf("[%02d]  %-20s %-20s", p[i].no, p[i].first, p[i].family);
 			printf("%d %d\n", p[i].sex, p[i].pt);
