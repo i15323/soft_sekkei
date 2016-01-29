@@ -1,4 +1,4 @@
-// funcs.cpp 1218
+// funcs.cpp
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -173,7 +173,6 @@ void STUDENT::print_specifiedname(char *ss)
 	}
 }
 
-//ポイント順でソート...バブルソートしか書けません！すみません(__)
 void STUDENT::sortOfPoint(int ord)
 {
 
@@ -196,8 +195,13 @@ void STUDENT::sortOfPoint(int ord)
 
 }
 
-//学生データ解放
-void STUDENT::free_data()
+STUDENT::STUDENT()
 {
-	free(p);
+	p = 0;
+	num = 0;
+}
+
+STUDENT::~STUDENT()
+{
+	if (p) delete[] p;
 }

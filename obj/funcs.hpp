@@ -26,10 +26,10 @@ struct STUDENT_DATA {
 class  STUDENT {
 
 	private:
-		int num;				//学生数
+		int num;			//学生数
 		int maxnlen;			//最大文字長
 		char fname[20];			//読み出しファイル名
-		struct STUDENT_DATA *p;	//データ格納先
+		struct STUDENT_DATA *p;		//データ格納先
 
 	public:
 		void getFileName();
@@ -42,8 +42,8 @@ class  STUDENT {
 		void print_specifiedname(char *);
 		void sortOfPoint(int);			//0:降順 1:昇順
 		void free_data();
-		//STUDENT();				//コンストラクタ
-		//~STUDENT();				//デストラクタ
+		STUDENT();				//コンストラクタ
+		~STUDENT();				//デストラクタ
 };
 
 

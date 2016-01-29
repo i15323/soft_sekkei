@@ -56,8 +56,6 @@ int main(int argc, char *argv[])
 
 	//============
 
-	//学生データ解放
-	s.free_data();
 
 
 	return 0;
