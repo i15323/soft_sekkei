@@ -1,4 +1,4 @@
-//main.cpp 1218 => 1222 => 0115
+//main.cpp
 //3IT KOMATSU Seiya
 
 #include <stdio.h>
@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 
 	//学生データファイルの入力
 	s.getFileName();	
+
 
 	printf("\n\n===========================\n\n");
 

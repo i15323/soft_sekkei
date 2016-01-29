@@ -1,9 +1,8 @@
 //funcs.hpp
-//伝言：早く完成させろ
 
 
-//ヘッダファイルインクルード
-//#ifndef _STDIO_H
+#ifndef _FUNCS_H_
+#define _FUNCS_H
 
 
 //プリプロ
@@ -47,18 +46,6 @@ class  STUDENT {
 };
 
 
-#ifndef _FUNCS_H_
-#define _FUNCS_H
 
-/*funcs.c内の関数プロトタイプ宣言
-int load_data(char *, struct STUDENT **);
-void print_list(struct STUDENT *, int);
-double average(struct STUDENT *, int, int);
-int get_maxnamelength(struct STUDENT *, int);
-void print_nfamilyname(struct STUDENT *, int ,int);
-void print_specifiedname(struct STUDENT *, int, char *);
-void sort_pt(struct STUDENT *, int);
-void free_data(struct STUDENT *);
-*/
 
 #endif // _FUNCS_H
