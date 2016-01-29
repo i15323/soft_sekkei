@@ -1,34 +1,38 @@
 //funcs.hpp
 
+#ifndef _FUNCS_HPP_
+#define _FUNCS_HPP_
 
-#ifndef _FUNCS_H_
-#define _FUNCS_H
 
-
-//プリプロ
 #define MALE 0
 #define FEMALE 1
 
 
+typedef struct student student;
+
+//----------------------
 //構造体定義
-struct STUDENT_DATA {
+//----------------------
+struct student {
 
 	int no;
 	char family[20];
-	char first[20];
+	char first[20];		
 	int sex;
 	int pt;
 	
 };
 
+//----------------------
 //クラス定義
-class  STUDENT {
+//----------------------
+class  HomeRoom {
 
 	private:
-		int num;			//学生数
-		int maxnlen;			//最大文字長
-		char fname[20];			//読み出しファイル名
-		struct STUDENT_DATA *p;		//データ格納先
+		int num;					//学生数
+		int maxnlen;				//最大文字長
+		char fname[20];				//読み出しファイル名
+		student *data;				//データ格納先
 
 	public:
 		void getFileName();
@@ -39,10 +43,10 @@ class  STUDENT {
 		int get_maxnamelength();
 		void printMaxNameLength();
 		void print_specifiedname(char *);
-		void sortOfPoint(int);			//0:降順 1:昇順
+		void sortOfPoint(int);				//0:降順 1:昇順
 		void free_data();
-		STUDENT();				//コンストラクタ
-		~STUDENT();				//デストラクタ
+		HomeRoom();							//コンストラクタ
+		~HomeRoom();							//デストラクタ
 };
 
 
