@@ -25,4 +25,6 @@ http://www.di.kagawa-nct.ac.jp/~kanazawa/soft
 http://www.kagawa-nct.ac.jp/school_affairs/syllabus/takuma/2015/index15_it.htm
 
 
-####前までの課題も早くUPしろ
+####昨日の追加
+
+クラス化の課題をインタプリタ風に実行できるように追加。
